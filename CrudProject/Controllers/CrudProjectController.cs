@@ -49,13 +49,15 @@ namespace CrudProject.Controllers
             return Ok(await _context.CrudProjects.ToListAsync());
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
 
         public async Task<ActionResult<List<CrudProject>>> UpdateStudent(CrudProject request)
+        
         {
+            Console.WriteLine(request);
             var dbPupil = await _context.CrudProjects.FindAsync(request.Id);
             if (dbPupil == null)
-                return BadRequest("Pupil not found");
+            return BadRequest("Pupil not found");
 
             dbPupil.FirstName = request.FirstName;
             dbPupil.LastName = request.LastName;
