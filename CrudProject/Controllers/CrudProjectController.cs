@@ -24,6 +24,33 @@ namespace CrudProject.Controllers
             return Ok(studentList);
         }
 
+        // API to get inActive students
+        //[HttpGet]
+
+        //public async Task<ActionResult<List<CrudProject>>> InActive()
+        //{
+        //    List<CrudProject> studentList = new List<CrudProject>();
+        //    var data = await _context.CrudProjects.Where(e => 
+        //    !e.IsActive)
+        //        .ToListAsync();
+        //    studentList.AddRange(data);
+        //    return Ok(studentList);
+        //}
+
+        // API to get Active students
+        //[HttpGet]
+
+        //public async Task<ActionResult<List<CrudProject>>> Active()
+        //{
+        //    List<CrudProject> studentList = new List<CrudProject>();
+        //    var data = await _context.CrudProjects.Where(e =>
+        //    e.IsActive)
+        //        .ToListAsync();
+        //    studentList.AddRange(data);
+        //    return Ok(studentList);
+        //}
+
+
         [HttpGet("{id}")]
 
         public async Task<ActionResult<CrudProject>> Get(int id)
