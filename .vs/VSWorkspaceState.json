@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CrudProject",
-    "\\CrudProject\\Controllers",
-    "\\CrudProject\\Data"
+    "\\CrudProject"
   ],
-  "SelectedNode": "\\CrudProject\\Controllers\\CrudProjectController.cs",
+  "SelectedNode": "\\CrudProject\\Controllers",
   "PreviewInSolutionExplorer": false
 }
